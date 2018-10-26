@@ -32,5 +32,6 @@ namespace GroupMap.Models
         }
         public DbSet<MapGroup> Groups { get; set; }
         public DbSet<UserProfile> UserProfiles { get; set; }
+        public DbSet<GpsCoordinate> GpsCoordinates { get; set; }
     }
 }

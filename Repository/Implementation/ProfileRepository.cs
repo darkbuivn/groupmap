@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using GroupMap.Models;
 using GroupMap.Common.Helper;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace GroupMap.Repository
 {
@@ -19,7 +18,8 @@ namespace GroupMap.Repository
             UserProfile res = new UserProfile()
             {
                 AspNetUserId = userID,
-                FullName = name,
+                FullName = string.Empty,
+                Email = name,
                 RegisterDate = Utility.GetUtcTimeStamp(DateTime.UtcNow),               
                 Id = Guid.NewGuid()
             };
@@ -27,9 +27,29 @@ namespace GroupMap.Repository
             return res;
         }
 
-        public UserProfile UpdateProfile(UserProfile profile)
+        public UserProfile GetByUserId(string aspNetUserID)
         {
-            return null;   
+            UserProfile res = context.UserProfiles.FirstOrDefault(x => x.AspNetUserId == aspNetUserID);
+
+            ApplicationUser aspNetUser = context.Users.Find(aspNetUserID);
+            if (string.IsNullOrEmpty(res.Email))
+            {
+                res.Email = aspNetUser.Email;
+            }
+
+            if (string.IsNullOrEmpty(aspNetUser.PhoneNumber))
+            {
+                res.PhoneNum = aspNetUser.PhoneNumber;
+            }
+            return res;
+        }
+
+        public async Task UpdateProfile(UserProfile profile)
+        {
+            await Task.Run(() =>
+            {
+                Update(profile);
+            });
         }
     }
 }

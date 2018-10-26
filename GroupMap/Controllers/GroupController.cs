@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using GroupMap.Controllers.Base;
 using System.Web.Mvc;
-using GroupMap.Service;
-using GroupMap.Models;
 
 namespace GroupMap.Controllers
 {
-    [Authorize]
-    public class GroupController : Controller
+    public class GroupController : AuthorizeController
     {
         // GET: Group
         public ActionResult Index()

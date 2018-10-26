@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+﻿using GroupMap.Controllers.Base;
 
 namespace GroupMap.Controllers
 {
-    [Authorize]
-    public class GroupApiController : ApiController
+    public class GroupApiController : AuthorizeApiController
     {
 
     }

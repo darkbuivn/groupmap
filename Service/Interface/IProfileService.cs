@@ -1,8 +1,4 @@
 ﻿using GroupMap.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace GroupMap.Service
@@ -10,5 +6,9 @@ namespace GroupMap.Service
     public interface IProfileService
     {
         Task<UserProfile> CreateAssociateProfile(ApplicationUser user);
+
+        bool SaveNewCoordinate(string userId, decimal latitude, decimal longitude);
+
+        UserProfile GetByUserID(string userId);
     }
 }
