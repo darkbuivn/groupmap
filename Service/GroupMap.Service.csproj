@@ -110,6 +110,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\GroupMap.Common.csproj">
+      <Project>{C4C8E7A9-2606-4E91-A0C8-B91B0DA367D8}</Project>
+      <Name>GroupMap.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\GroupMap.Models.csproj">
       <Project>{ae49b192-61c8-4acd-8937-5b9fea143d52}</Project>
       <Name>GroupMap.Models</Name>

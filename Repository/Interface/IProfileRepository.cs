@@ -10,6 +10,7 @@ namespace GroupMap.Repository
     public interface IProfileRepository
     {
         UserProfile CreateNewProfile(string name, string userID);
-        UserProfile UpdateProfile(UserProfile profile);
+        Task UpdateProfile(UserProfile profile);
+        UserProfile GetByUserId(string id);
     }
 }

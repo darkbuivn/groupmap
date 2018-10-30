@@ -20,12 +20,30 @@ namespace GroupMap
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
+                      //"~/Scripts/bootstrap.js",
+                      "~/Content/libs/jquery/dist/jquery.min.js",
+                      "~/Content/libs/bootstrap/dist/js/bootstrap.min.js",
+                      "~/Content/libs/fastclick/lib/fastclick.js",
+                      "~/Content/libs/js/adminlte.min.js",
+                      "~/Content/libs/jquery-sparkline/dist/jquery.sparkline.min.js",
+                      "~/Content/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js",
+                      "~/Content/plugins/jvectormap/jquery-jvectormap-world-mill-en.js",
+                      "~/Content/libs/jquery-slimscroll/jquery.slimscroll.min.js",
+                      "~/Content/libs/chart.js/Chart.js",
+                      "~/Content/libs/js/pages/dashboard2.js",
+                      "~/Content/libs/js/demo.js",
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      //"~/Content/bootstrap.css",
+                      //"~/Content/site.css",
+                      "~/Content/libs/bootstrap/dist/css/bootstrap.min.css",
+                      "~/Content/libs/font-awesome/css/font-awesome.min.css",
+                      "~/Content/libs/Ionicons/css/ionicons.min.css",
+                      "~/Content/libs/jvectormap/jquery-jvectormap.css",
+                      "~/Content/libs/css/AdminLTE.min.css",
+                      "~/Content/libs/css/skins/_all-skins.min.css"
+                      ));
         }
     }
 }

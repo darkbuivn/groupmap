@@ -1,4 +1,5 @@
-﻿using Microsoft.Owin;
+﻿using GroupMap.Service;
+using Microsoft.Owin;
 using Owin;
 
 [assembly: OwinStartupAttribute(typeof(GroupMap.Startup))]
@@ -9,6 +10,7 @@ namespace GroupMap
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+            AutoMapperConfig.Initialize();
         }
     }
 }
