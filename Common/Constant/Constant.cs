@@ -9,6 +9,7 @@ namespace GroupMap.Common.Constant
     public class Constant
     {
         public const string PAGE_TITLE_PROFILE_INDEX = "Profile";
+        public const string PAGE_TITLE_GROUPMAP_INDEX = "Group Map";
 
         public enum StatusCode: int
         {
