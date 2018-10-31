@@ -100,7 +100,9 @@
   <ItemGroup>
     <Compile Include="BaseClass\GenericRepository.cs" />
     <Compile Include="BaseClass\UnitOfWork.cs" />
+    <Compile Include="Implementation\GroupRepository.cs" />
     <Compile Include="Implementation\ProfileRepository.cs" />
+    <Compile Include="Interface\IGroupRepository.cs" />
     <Compile Include="Interface\IProfileRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

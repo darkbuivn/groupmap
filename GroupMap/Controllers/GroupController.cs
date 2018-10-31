@@ -1,4 +1,5 @@
-﻿using GroupMap.Controllers.Base;
+﻿using GroupMap.Common.Constant;
+using GroupMap.Controllers.Base;
 using System.Web.Mvc;
 
 namespace GroupMap.Controllers
@@ -10,5 +11,18 @@ namespace GroupMap.Controllers
         {
             return View();
         }
+
+        // Get
+        public ActionResult CreateGroup()
+        {
+            ViewBag.Title = Constant.PAGE_TITLE_GROUPMAP_CREATE;
+            return View();
+        }
+
+        //[HttpPost]
+        //public ActionResult CreateGroup()
+        //{
+        //    return View();
+        //}
     }
 }

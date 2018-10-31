@@ -330,11 +330,13 @@
     <Content Include="Content\libs\font-awesome\css\font-awesome.min.css" />
     <Content Include="Content\libs\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\libs\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="Content\libs\img\252025.svg" />
     <Content Include="Content\libs\img\avatar.png" />
     <Content Include="Content\libs\img\avatar04.png" />
     <Content Include="Content\libs\img\avatar2.png" />
     <Content Include="Content\libs\img\avatar3.png" />
     <Content Include="Content\libs\img\avatar5.png" />
+    <Content Include="Content\libs\img\blueball.jpg" />
     <Content Include="Content\libs\img\credit\american-express.png" />
     <Content Include="Content\libs\img\credit\cirrus.png" />
     <Content Include="Content\libs\img\credit\mastercard.png" />
@@ -344,6 +346,7 @@
     <Content Include="Content\libs\img\credit\visa.png" />
     <Content Include="Content\libs\img\default-50x50.gif" />
     <Content Include="Content\libs\img\icons.png" />
+    <Content Include="Content\libs\img\marker_yellow.png" />
     <Content Include="Content\libs\img\photo1.png" />
     <Content Include="Content\libs\img\photo2.png" />
     <Content Include="Content\libs\img\photo3.jpg" />
@@ -3647,10 +3650,10 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Profile\Index.cshtml" />
     <Content Include="Views\Map\Index.cshtml" />
+    <Content Include="Views\Group\CreateGroup.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Group\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

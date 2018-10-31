@@ -10,6 +10,7 @@ namespace GroupMap.Common.Constant
     {
         public const string PAGE_TITLE_PROFILE_INDEX = "Profile";
         public const string PAGE_TITLE_GROUPMAP_INDEX = "Group Map";
+        public const string PAGE_TITLE_GROUPMAP_CREATE = "Create Group";
 
         public enum StatusCode: int
         {
@@ -25,5 +26,7 @@ namespace GroupMap.Common.Constant
 
         // Keep data within 15 days
         public const double DURATION_TIME_FOR_KEEPING_DATA = 15; // 15 days = 1296000000 miliseconds
+
+        public const string ME = "Me";
     }
 }

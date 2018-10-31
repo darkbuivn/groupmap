@@ -36,7 +36,7 @@ namespace GroupMap
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       //"~/Content/bootstrap.css",
-                      //"~/Content/site.css",
+                      "~/Content/site.css",
                       "~/Content/libs/bootstrap/dist/css/bootstrap.min.css",
                       "~/Content/libs/font-awesome/css/font-awesome.min.css",
                       "~/Content/libs/Ionicons/css/ionicons.min.css",
